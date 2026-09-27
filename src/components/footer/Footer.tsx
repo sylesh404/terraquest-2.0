@@ -152,7 +152,7 @@ export const Footer: React.FC<FooterProps> = ({ onReopenIntro, onOpenLetter }) =
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-500 font-cinzel">
           <p>
-            © 2026 Department of AI & Machine Learning. All Rights Reserved. Crafted with computational sorcery.
+            © 2026 Department of Artificial Intelligence & Machine Learning. All Rights Reserved. Crafted with computational sorcery.
           </p>
           <button
             onClick={scrollToTop}

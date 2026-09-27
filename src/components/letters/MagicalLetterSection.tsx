@@ -152,7 +152,7 @@ export const MagicalLetterSection: React.FC<MagicalLetterSectionProps> = ({
                   You are hereby summoned to join the fellowship of innovators at <strong>TerraQuest 2.0</strong>, scheduled to commence on the twenty-fourth day of April.
                 </p>
                 <p>
-                  The Department of AI & Machine Learning opens its highest-compute sanctum for twenty-four unbroken hours. The four noble houses — <em>Gryffindor, Slytherin, Ravenclaw, and Hufflepuff</em> — have posted their challenges across autonomous swarms, cognitive reasoning, cybersecurity, and Earth intelligence.
+                  The Department of Artificial Intelligence & Machine Learning opens its highest-compute sanctum for twenty-four unbroken hours. The four noble houses — <em>Gryffindor, Slytherin, Ravenclaw, and Hufflepuff</em> — have posted their challenges across autonomous swarms, cognitive reasoning, cybersecurity, and Earth intelligence.
                 </p>
                 <p>
                   The Grand Prize Vault of <strong>₹2,50,000+</strong>, along with seed venture access and proprietary cloud compute grants, shall be unlocked before the Faculty High Council upon the conclusion of the final demo trial.

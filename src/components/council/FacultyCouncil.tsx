@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { sounds } from '../../utils/soundEffects';
 
 // Direct Vite imports for the 3 uploaded faculty photos in assets
-import shivaImage from '../../assets/1.png';
+import sivaprakashImage from '../../assets/1.png';
 import rupaImage from '../../assets/2.png';
 import nancyImage from '../../assets/3.png';
 
@@ -29,7 +29,7 @@ export const FacultyCouncil: React.FC = () => {
           FACULTY PRESENTATION (ORIGINAL PHOTO RATIO / NO CIRCLE)
           ================================================== */}
 
-      {/* TOP / CENTER FACULTY: Dr. Shiva Prakash C (Image 1) */}
+      {/* TOP / CENTER FACULTY: Dr. Sivaprakash C (Image 1) */}
       <div className="flex flex-col items-center text-center mb-10 sm:mb-14">
         <div className="group flex flex-col items-center cursor-pointer select-none">
           {/* Natural Photo Ratio Portrait - Uncropped */}
@@ -42,8 +42,8 @@ export const FacultyCouncil: React.FC = () => {
             className="flex items-center justify-center group-hover:scale-[1.04] transition-transform duration-300 mb-3 sm:mb-4 bg-transparent"
           >
             <img
-              src={shivaImage}
-              alt="Dr. Shiva Prakash C"
+              src={sivaprakashImage}
+              alt="Dr. Sivaprakash C"
               className="h-36 sm:h-44 md:h-48 lg:h-52 w-auto max-w-full object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.6)]"
               loading="eager"
             />
@@ -57,7 +57,7 @@ export const FacultyCouncil: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.35, ease: 'easeOut' }}
           >
             <h4 className="font-cinzel text-base sm:text-lg lg:text-xl font-bold text-[#F5EBD5] group-hover:text-[#F2CC69] transition-colors duration-200 tracking-wide mb-1">
-              Dr. Shiva Prakash C
+              Dr. Sivaprakash C
             </h4>
             <p className="font-sans text-xs sm:text-sm font-medium text-[#A9A08F] tracking-wide">
               Head, Department of AIML
@@ -98,7 +98,7 @@ export const FacultyCouncil: React.FC = () => {
               Dr. P. Rupa Ezhil Arasi
             </h4>
             <p className="font-sans text-[11px] sm:text-xs md:text-sm font-medium text-[#A9A08F] tracking-wide leading-tight">
-              Assistant Professor
+              Professor
             </p>
           </motion.div>
         </div>
@@ -116,7 +116,7 @@ export const FacultyCouncil: React.FC = () => {
           >
             <img
               src={nancyImage}
-              alt="Nancy Vaish"
+              alt="Prof. Nancy Vaish"
               className="h-28 sm:h-36 md:h-40 lg:h-44 w-auto max-w-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.6)]"
               loading="eager"
             />
@@ -130,10 +130,10 @@ export const FacultyCouncil: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}
           >
             <h4 className="font-cinzel text-xs sm:text-base lg:text-lg font-bold text-[#F5EBD5] group-hover:text-[#F2CC69] transition-colors duration-200 tracking-wide mb-1 leading-snug">
-              Nancy Vaish
+              Prof. Nancy Vaish
             </h4>
             <p className="font-sans text-[11px] sm:text-xs md:text-sm font-medium text-[#A9A08F] tracking-wide leading-tight">
-              Assistant Professor
+              Professor
             </p>
           </motion.div>
         </div>

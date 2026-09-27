@@ -10,7 +10,7 @@ export const ARCHIVE_RECORDS: ArchiveRecord[] = [
     title: 'The Epistemic Oracle: Zero-Hallucination Agentic RAG',
     archivalCode: 'LIB-081',
     summary: 'Build a multi-agent fact-checking and knowledge-graph grounding engine that verifies citations before generating responses for high-stakes healthcare or legal decisions.',
-    fullDecree: 'Modern Large Language Models suffer from stochastic fabrications. The Department of AI/ML summons enchanters to construct a dual-agent verification system: an Inquirer Agent that retrieves evidence from structured knowledge graphs and an Inquisitor Agent that enforces semantic truth bounds.',
+    fullDecree: 'Modern Large Language Models suffer from stochastic fabrications. The Department of Artificial Intelligence & Machine Learning summons enchanters to construct a dual-agent verification system: an Inquirer Agent that retrieves evidence from structured knowledge graphs and an Inquisitor Agent that enforces semantic truth bounds.',
     keyDirectives: [
       'Must connect with a hybrid Vector + Graph database (e.g. Neo4j or NetworkX)',
       'Sub-2-second latency for question verification',

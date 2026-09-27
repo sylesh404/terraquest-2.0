@@ -44,7 +44,7 @@ export const TerraQuestReveal: React.FC<TerraQuestRevealProps> = ({ onEnter }) =
         transition={{ delay: 0.4, duration: 0.8 }}
         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#F5DEB3] text-xs uppercase tracking-[0.25em] font-cinzel mb-4"
       >
-        <span>Department of AI & Machine Learning Presents</span>
+        <span>Department of Artificial Intelligence & Machine Learning Presents</span>
       </motion.div>
 
       {/* Main Title */}

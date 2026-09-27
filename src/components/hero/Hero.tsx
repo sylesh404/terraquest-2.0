@@ -30,7 +30,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(90vw,550px)] h-[350px] rounded-full bg-[#D4AF37]/8 blur-[130px] pointer-events-none" />
 
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center w-full">
-        {/* 1. Eyebrow text: DEPARTMENT OF AI/ML · HACKATHON MMXXVI */}
+        {/* 1. Eyebrow text: DEPARTMENT OF ARTIFICIAL INTELLIGENCE & MACHINE LEARNING · HACKATHON MMXXVI */}
         <motion.div
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,8 +38,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6 max-w-full px-2"
         >
           <span className="w-4 sm:w-14 h-[1px] bg-gradient-to-r from-transparent to-[#D4AF37]/80 shrink-0" />
-          <span className="font-cinzel text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.16em] sm:tracking-[0.32em] text-[#D4AF37] font-semibold text-center">
-            DEPARTMENT OF AI/ML · HACKATHON MMXXVI
+          <span className="font-cinzel text-[9px] sm:text-xs md:text-sm uppercase tracking-[0.12em] sm:tracking-[0.22em] text-[#D4AF37] font-semibold text-center">
+            DEPARTMENT OF ARTIFICIAL INTELLIGENCE &amp; MACHINE LEARNING · HACKATHON MMXXVI
           </span>
           <span className="w-4 sm:w-14 h-[1px] bg-gradient-to-l from-transparent to-[#D4AF37]/80 shrink-0" />
         </motion.div>

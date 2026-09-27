@@ -113,8 +113,11 @@ export const IntroExperience: React.FC<IntroExperienceProps> = ({
   };
 
   // Skip directly to homepage
-  const handleSkip = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handleSkip = (e?: React.MouseEvent | React.TouchEvent) => {
+    if (e) e.stopPropagation();
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
     setIntroComplete(true);
     onComplete();
   };
@@ -184,8 +187,8 @@ export const IntroExperience: React.FC<IntroExperienceProps> = ({
                 {/* Subtle light rays & top accent */}
                 <div className="flex items-center justify-center gap-2 sm:gap-4 mb-3 sm:mb-4 max-w-full">
                   <span className="w-6 sm:w-28 h-[1px] bg-gradient-to-r from-transparent via-[#E8DCC4] to-transparent opacity-60 shrink-0" />
-                  <span className="font-cinzel text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.18em] sm:tracking-[0.35em] text-[#E8DCC4] font-medium drop-shadow-[0_0_12px_rgba(232,220,196,0.6)] text-center">
-                    Department of AI & Machine Learning
+                  <span className="font-cinzel text-[9px] sm:text-xs md:text-sm uppercase tracking-[0.14em] sm:tracking-[0.28em] text-[#E8DCC4] font-medium drop-shadow-[0_0_12px_rgba(232,220,196,0.6)] text-center">
+                    Department of Artificial Intelligence & Machine Learning
                   </span>
                   <span className="w-6 sm:w-28 h-[1px] bg-gradient-to-l from-transparent via-[#E8DCC4] to-transparent opacity-60 shrink-0" />
                 </div>
@@ -253,47 +256,78 @@ export const IntroExperience: React.FC<IntroExperienceProps> = ({
           )}
         </AnimatePresence>
 
-        {/* 4. SUBTLE AUDIO UNMUTE & TESTING CONTROLS */}
+        {/* 4. SUBTLE AUDIO UNMUTE & MOBILE / DESKTOP SKIP CONTROLS */}
         {!introTransitioning && (
-          <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 left-4 sm:left-auto z-30 flex flex-wrap items-center justify-end gap-2 sm:gap-3">
-            {/* Click to Unmute Pill */}
+          <>
+            {/* MOBILE ONLY: Dedicated, elegant bottom-right Skip button */}
             <button
+              type="button"
+              onClick={handleSkip}
+              className="sm:hidden fixed bottom-5 right-5 z-40 px-3.5 py-2 rounded-full bg-black/75 hover:bg-black/90 active:scale-95 border border-[#D4AF37]/60 text-[#F5DEB3] hover:text-white text-xs font-cinzel font-semibold tracking-wider backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.8),0_0_15px_rgba(212,175,55,0.2)] flex items-center gap-1.5 cursor-pointer select-none touch-manipulation min-h-[44px]"
+              aria-label="Skip Intro Video"
+            >
+              <span>Skip</span>
+              <span className="text-[#D4AF37] text-sm font-bold">×</span>
+            </button>
+
+            {/* MOBILE ONLY: Bottom-left compact audio unmute pill */}
+            <button
+              type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 handleContainerClick();
               }}
-              className="min-h-[44px] flex items-center gap-2 px-3.5 py-2 rounded-full bg-black/70 hover:bg-black/85 border border-white/20 text-neutral-300 hover:text-white text-xs font-cinzel backdrop-blur-md transition-all cursor-pointer"
+              className="sm:hidden fixed bottom-5 left-5 z-40 min-h-[44px] flex items-center gap-1.5 px-3 py-2 rounded-full bg-black/75 border border-white/20 text-neutral-300 text-xs font-cinzel backdrop-blur-md cursor-pointer select-none touch-manipulation"
+              aria-label="Toggle Audio"
             >
               {isMuted ? (
                 <>
-                  <VolumeX className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                  <span className="text-[11px]">Unmute Audio<span className="hidden sm:inline"> (or tap screen)</span></span>
+                  <VolumeX className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
+                  <span className="text-[10px]">Unmute</span>
                 </>
               ) : (
                 <>
-                  <Volume2 className="w-4 h-4 text-[#00E5FF] shrink-0" />
-                  <span className="text-[11px]">Audio Active</span>
+                  <Volume2 className="w-3.5 h-3.5 text-[#00E5FF] shrink-0" />
+                  <span className="text-[10px]">Active</span>
                 </>
               )}
             </button>
 
-            {/* Discreet 00:27 Fast-Forward for instantaneous testing */}
-            <button
-              onClick={handleJumpTo27}
-              className="min-h-[44px] min-w-[44px] px-3 py-2 rounded-full bg-black/70 hover:bg-black/85 border border-white/20 text-neutral-400 hover:text-[#D4AF37] text-xs font-cinzel backdrop-blur-md transition-all flex items-center justify-center cursor-pointer"
-              title="Fast forward to 00:00:27.5 to verify the 00:00:29 title trigger"
-            >
-              <span>⏩ 00:27</span>
-            </button>
+            {/* DESKTOP CONTROLS */}
+            <div className="hidden sm:flex absolute bottom-4 sm:bottom-6 right-4 sm:right-6 z-30 items-center justify-end gap-3">
+              {/* Click to Unmute Pill */}
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleContainerClick();
+                }}
+                className="min-h-[44px] flex items-center gap-2 px-3.5 py-2 rounded-full bg-black/70 hover:bg-black/85 border border-white/20 text-neutral-300 hover:text-white text-xs font-cinzel backdrop-blur-md transition-all cursor-pointer select-none"
+              >
+                {isMuted ? (
+                  <>
+                    <VolumeX className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                    <span className="text-[11px]">Unmute Audio (or tap screen)</span>
+                  </>
+                ) : (
+                  <>
+                    <Volume2 className="w-4 h-4 text-[#00E5FF] shrink-0" />
+                    <span className="text-[11px]">Audio Active</span>
+                  </>
+                )}
+              </button>
 
-            {/* Skip directly to homepage */}
-            <button
-              onClick={handleSkip}
-              className="min-h-[44px] px-3.5 py-2 rounded-full bg-black/70 hover:bg-black/85 border border-white/20 text-neutral-400 hover:text-white text-xs font-cinzel backdrop-blur-md transition-all flex items-center justify-center cursor-pointer"
-            >
-              <span>Skip ✕</span>
-            </button>
-          </div>
+              {/* Desktop Skip */}
+              <button
+                type="button"
+                onClick={handleSkip}
+                className="min-h-[44px] px-3.5 py-2 rounded-full bg-black/70 hover:bg-black/85 border border-white/20 text-neutral-400 hover:text-white text-xs font-cinzel backdrop-blur-md transition-all flex items-center justify-center cursor-pointer select-none"
+                aria-label="Skip Intro"
+              >
+                <span>Skip ✕</span>
+              </button>
+            </div>
+          </>
         )}
       </div>
     </div>

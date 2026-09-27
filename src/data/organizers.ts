@@ -24,20 +24,20 @@ export interface FacultyMember {
 export const FACULTY_COUNCIL: FacultyMember[] = [
   {
     id: 'faculty-top',
-    name: 'Dr. Shiva Prakash C',
+    name: 'Dr. Sivaprakash C',
     designation: 'Head, Department of AIML',
-    imageSlug: 'Shiva-Prakash-C',
+    imageSlug: 'Sivaprakash-C',
   },
   {
     id: 'faculty-left',
     name: 'Dr. P. Rupa Ezhil Arasi',
-    designation: 'Assistant Professor',
+    designation: 'Professor',
     imageSlug: 'P-Rupa-Ezhil-Arasi',
   },
   {
     id: 'faculty-right',
-    name: 'Nancy Vaish',
-    designation: 'Assistant Professor',
+    name: 'Prof. Nancy Vaish',
+    designation: 'Professor',
     imageSlug: 'Nancy-Vaish',
   },
 ];
@@ -118,7 +118,7 @@ export const STUDENT_COORDINATORS: StudentCoordinator[] = [
   },
   {
     id: 'coord-9',
-    name: 'ANUSHMAN SHARMA',
+    name: 'ANUSHUMAN SHARMA',
     yearDepartment: 'AIML - 3rd Year',
     initials: 'AS',
   },

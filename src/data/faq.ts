@@ -11,7 +11,7 @@ export const FAQ_DATA: FAQItem[] = [
     id: 'faq-1',
     category: 'General',
     question: 'What is TerraQuest 2.0 and who can participate?',
-    answer: 'TerraQuest 2.0 is the premier national-level AI/ML hackathon organized by the Department of Artificial Intelligence and Machine Learning. Any student enrolled in an undergraduate, postgraduate, or research program across engineering, sciences, and technology is eligible to enter the quest.',
+    answer: 'TerraQuest 2.0 is the premier national-level AI/ML hackathon organized by the Department of Artificial Intelligence & Machine Learning. Any student enrolled in an undergraduate, postgraduate, or research program across engineering, sciences, and technology is eligible to enter the quest.',
     magicalTip: 'Even novice sorcerers have special award categories reserved for them!'
   },
   {

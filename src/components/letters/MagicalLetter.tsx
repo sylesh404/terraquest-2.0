@@ -82,7 +82,7 @@ export const MagicalLetter: React.FC<MagicalLetterProps> = ({ onRegisterNow }) =
             We are pleased to inform you that you and your prospective fellowship have been granted an imperial audience at <strong>TerraQuest 2.0</strong>, commencing on the twenty-fourth day of April in the year 2026.
           </p>
           <p>
-            The Department of AI & Machine Learning has unsealed its high-compute cloisters. Four ancient Houses — <em>Pyrosync, Aethermind, Terraspectra, and Chronoveil</em> — have unfurled their banners to test the mettle of the realm&apos;s finest algorithmic architects.
+            The Department of Artificial Intelligence & Machine Learning has unsealed its high-compute cloisters. Four ancient Houses — <em>Pyrosync, Aethermind, Terraspectra, and Chronoveil</em> — have unfurled their banners to test the mettle of the realm&apos;s finest algorithmic architects.
           </p>
           <p>
             Enclosed within this missive is your authorization pass for thirty-six unbroken hours of continuous research, synthesis, and model deployment. The Grand Vault of Bounties totaling <strong>₹2,50,000</strong> shall be unlocked before the Faculty Council upon the final hour.

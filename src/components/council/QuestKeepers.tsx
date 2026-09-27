@@ -96,7 +96,7 @@ const ROW_TWO_COORDINATORS: CoordinatorItem[] = [
   },
   {
     id: 'anushman',
-    name: 'ANUSHMAN SHARMA',
+    name: 'ANUSHUMAN SHARMA',
     yearDepartment: 'AIML - 3rd Year',
     photo: photoAnushman,
     initials: 'AS',
@@ -250,7 +250,7 @@ export const QuestKeepers: React.FC = () => {
       {/* ==================================================
           DESKTOP VIEW: EXACT 5 + 5 GRID (>= 1024px)
           Row 1: YUKTHA | SANTHOSI | ANUSH | MANAS | UTSAW
-          Row 2: PROMOD | ANUSHMAN | ANJANAA | SAHANA | NIKIL
+          Row 2: PROMOD | ANUSHUMAN | ANJANAA | SAHANA | NIKIL
           ================================================== */}
       <div className="hidden lg:block space-y-5 max-w-7xl mx-auto">
         {/* Row 1 — Five Members */}
@@ -283,7 +283,7 @@ export const QuestKeepers: React.FC = () => {
           [YUKTHA] [SANTHOSI]
           [ANUSH]  [MANAS]
           [UTSAW]  [PROMOD]
-          [ANUSHMAN] [ANJANAA]
+          [ANUSHUMAN] [ANJANAA]
           [SAHANA] [NIKIL]
           ================================================== */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:hidden gap-3 sm:gap-4 max-w-5xl mx-auto items-stretch">
