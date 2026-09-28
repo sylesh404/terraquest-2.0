@@ -133,7 +133,7 @@ export const FacultyCouncil: React.FC = () => {
               Prof. Nancy Vaish
             </h4>
             <p className="font-sans text-[11px] sm:text-xs md:text-sm font-medium text-[#A9A08F] tracking-wide leading-tight">
-              Professor
+              Assistant Professor
             </p>
           </motion.div>
         </div>

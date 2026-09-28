@@ -96,14 +96,14 @@ const ROW_TWO_COORDINATORS: CoordinatorItem[] = [
   },
   {
     id: 'anushman',
-    name: 'ANUSHUMAN SHARMA',
+    name: 'ANSHUMAN SHARMA',
     yearDepartment: 'AIML - 3rd Year',
     photo: photoAnushman,
     initials: 'AS',
   },
   {
     id: 'anjanaa',
-    name: 'ANJANAA BLACHANDER',
+    name: 'ANJANAA BALACHANDER',
     yearDepartment: 'AIML - 2nd Year',
     photo: photoAnjanaa,
     initials: 'AB',

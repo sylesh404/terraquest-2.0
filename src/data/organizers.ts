@@ -37,7 +37,7 @@ export const FACULTY_COUNCIL: FacultyMember[] = [
   {
     id: 'faculty-right',
     name: 'Prof. Nancy Vaish',
-    designation: 'Professor',
+    designation: 'Assistant Professor',
     imageSlug: 'Nancy-Vaish',
   },
 ];
@@ -118,13 +118,13 @@ export const STUDENT_COORDINATORS: StudentCoordinator[] = [
   },
   {
     id: 'coord-9',
-    name: 'ANUSHUMAN SHARMA',
+    name: 'ANSHUMAN SHARMA',
     yearDepartment: 'AIML - 3rd Year',
     initials: 'AS',
   },
   {
     id: 'coord-10',
-    name: 'ANJANAA BLACHANDER',
+    name: 'ANJANAA BALACHANDER',
     yearDepartment: 'AIML - 2nd Year',
     initials: 'AB',
   },
