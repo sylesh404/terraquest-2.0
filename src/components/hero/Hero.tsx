@@ -35,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.0, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col items-center justify-center gap-1.5 sm:gap-2 mb-4 sm:mb-6 max-w-full px-2"
+          className="flex flex-col items-center justify-center gap-1.5 sm:gap-2 mb-2 sm:mb-3 max-w-full px-2"
         >
           <div className="flex items-center justify-center gap-2 sm:gap-3">
             <span className="w-4 sm:w-14 h-[1px] bg-gradient-to-r from-transparent to-[#D4AF37]/80 shrink-0" />
@@ -47,6 +47,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           <span className="font-cinzel text-[9px] sm:text-xs md:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[#D4AF37]/90 font-semibold text-center">
             ASSOCIATED WITH IEEE
           </span>
+        </motion.div>
+
+        {/* 2. Middle Event Banner: HACKNOVA */}
+        <motion.div
+          initial={{ opacity: 0, y: -6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.0, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
+          className="font-cinzel text-xs sm:text-sm md:text-base font-bold tracking-[0.3em] sm:tracking-[0.45em] text-[#F3E5AB] uppercase mb-2 sm:mb-3 text-center"
+          style={{
+            textShadow: '0 0 18px rgba(212, 175, 55, 0.55)',
+          }}
+        >
+          HACKNOVA
         </motion.div>
 
         {/* 2. Dominant Title: TERRAQUEST */}

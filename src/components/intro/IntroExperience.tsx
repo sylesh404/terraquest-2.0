@@ -185,12 +185,17 @@ export const IntroExperience: React.FC<IntroExperienceProps> = ({
                 className="w-full max-w-6xl mx-auto flex flex-col items-center justify-center text-center"
               >
                 {/* Subtle light rays & top accent */}
-                <div className="flex items-center justify-center gap-2 sm:gap-4 mb-3 sm:mb-4 max-w-full">
+                <div className="flex items-center justify-center gap-2 sm:gap-4 mb-2 sm:mb-2.5 max-w-full">
                   <span className="w-6 sm:w-28 h-[1px] bg-gradient-to-r from-transparent via-[#E8DCC4] to-transparent opacity-60 shrink-0" />
-                  <span className="font-cinzel text-[9px] sm:text-xs md:text-sm uppercase tracking-[0.14em] sm:tracking-[0.28em] text-[#E8DCC4] font-medium drop-shadow-[0_0_12px_rgba(232,220,196,0.6)] text-center">
-                    Department of Artificial Intelligence & Machine Learning
+                  <span className="font-cinzel text-[9px] sm:text-xs md:text-sm uppercase tracking-[0.1em] sm:tracking-[0.18em] text-[#E8DCC4] font-medium drop-shadow-[0_0_12px_rgba(232,220,196,0.6)] text-center">
+                    Department of Artificial Intelligence &amp; Machine Learning
                   </span>
                   <span className="w-6 sm:w-28 h-[1px] bg-gradient-to-l from-transparent via-[#E8DCC4] to-transparent opacity-60 shrink-0" />
+                </div>
+
+                {/* HACKNOVA between Department and TERRAQUEST */}
+                <div className="font-cinzel text-xs sm:text-sm md:text-base font-bold tracking-[0.3em] sm:tracking-[0.45em] text-[#F3E5AB] uppercase mb-2 sm:mb-3 text-center drop-shadow-[0_0_18px_rgba(212,175,55,0.6)]">
+                  HACKNOVA
                 </div>
 
                 {/* Dominant Visual Title: TERRAQUEST */}
