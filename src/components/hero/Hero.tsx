@@ -30,12 +30,25 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(90vw,550px)] h-[350px] rounded-full bg-[#D4AF37]/8 blur-[130px] pointer-events-none" />
 
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center w-full">
-        {/* 1. Eyebrow text */}
+        {/* 1. Grand Event Header: HACKNOVA */}
+        <motion.h2
+          initial={{ opacity: 0, y: -16, scale: 0.96 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 1.0, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          className="font-cinzel text-[clamp(2.2rem,5.8vw,4.6rem)] font-black uppercase tracking-[0.16em] sm:tracking-[0.24em] -mr-[0.16em] sm:-mr-[0.24em] text-transparent bg-clip-text bg-gradient-to-b from-[#FFFDF7] via-[#F3E5AB] to-[#C89B3C] leading-none px-2 text-center mb-2.5 sm:mb-3.5"
+          style={{
+            filter: 'drop-shadow(0 0 32px rgba(212, 175, 55, 0.45)) drop-shadow(0 4px 16px rgba(0, 0, 0, 0.9))',
+          }}
+        >
+          HACKNOVA
+        </motion.h2>
+
+        {/* 2. Department & Association Eyebrow text */}
         <motion.div
-          initial={{ opacity: 0, y: -12 }}
+          initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.0, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col items-center justify-center gap-1.5 sm:gap-2 mb-2 sm:mb-3 max-w-full px-2"
+          transition={{ duration: 1.0, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col items-center justify-center gap-1.5 sm:gap-2 mb-3 sm:mb-4 max-w-full px-2"
         >
           <div className="flex items-center justify-center gap-2 sm:gap-3">
             <span className="w-4 sm:w-14 h-[1px] bg-gradient-to-r from-transparent to-[#D4AF37]/80 shrink-0" />
@@ -49,24 +62,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRegister }) => {
           </span>
         </motion.div>
 
-        {/* 2. Middle Event Banner: HACKNOVA */}
-        <motion.div
-          initial={{ opacity: 0, y: -6 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.0, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
-          className="font-cinzel text-xs sm:text-sm md:text-base font-bold tracking-[0.3em] sm:tracking-[0.45em] text-[#F3E5AB] uppercase mb-2 sm:mb-3 text-center"
-          style={{
-            textShadow: '0 0 18px rgba(212, 175, 55, 0.55)',
-          }}
-        >
-          HACKNOVA
-        </motion.div>
-
-        {/* 2. Dominant Title: TERRAQUEST */}
+        {/* 3. Dominant Title: TERRAQUEST */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 1.2, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
           className="font-cinzel text-[clamp(2.2rem,7.2vw,6.5rem)] font-black uppercase tracking-[0.08em] sm:tracking-[0.15em] -mr-[0.08em] sm:-mr-[0.15em] text-transparent bg-clip-text bg-gradient-to-b from-[#FFF5DA] via-[#E8C86A] to-[#B38728] leading-none px-2 text-center"
           style={{
             filter: 'drop-shadow(0 0 35px rgba(212, 175, 55, 0.35)) drop-shadow(0 4px 18px rgba(0, 0, 0, 0.9))',

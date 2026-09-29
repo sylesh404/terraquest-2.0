@@ -184,6 +184,17 @@ export const IntroExperience: React.FC<IntroExperienceProps> = ({
                 transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
                 className="w-full max-w-6xl mx-auto flex flex-col items-center justify-center text-center"
               >
+                {/* 1. Grand Event: HACKNOVA */}
+                <h2
+                  className="font-cinzel text-[clamp(2rem,5.2vw,4.4rem)] font-black uppercase text-[#F7E7CE] tracking-[0.14em] sm:tracking-[0.22em] -mr-[0.14em] sm:-mr-[0.22em] drop-shadow-[0_0_35px_rgba(212,175,55,0.5)] leading-tight text-center max-w-full mb-1.5 sm:mb-2"
+                  style={{
+                    textShadow:
+                      '0 0 30px rgba(247, 231, 206, 0.4), 0 4px 18px rgba(0, 0, 0, 0.9)',
+                  }}
+                >
+                  HACKNOVA
+                </h2>
+
                 {/* Subtle light rays & top accent */}
                 <div className="flex items-center justify-center gap-2 sm:gap-4 mb-2 sm:mb-2.5 max-w-full">
                   <span className="w-6 sm:w-28 h-[1px] bg-gradient-to-r from-transparent via-[#E8DCC4] to-transparent opacity-60 shrink-0" />
@@ -191,11 +202,6 @@ export const IntroExperience: React.FC<IntroExperienceProps> = ({
                     Department of Artificial Intelligence &amp; Machine Learning
                   </span>
                   <span className="w-6 sm:w-28 h-[1px] bg-gradient-to-l from-transparent via-[#E8DCC4] to-transparent opacity-60 shrink-0" />
-                </div>
-
-                {/* HACKNOVA between Department and TERRAQUEST */}
-                <div className="font-cinzel text-xs sm:text-sm md:text-base font-bold tracking-[0.3em] sm:tracking-[0.45em] text-[#F3E5AB] uppercase mb-2 sm:mb-3 text-center drop-shadow-[0_0_18px_rgba(212,175,55,0.6)]">
-                  HACKNOVA
                 </div>
 
                 {/* Dominant Visual Title: TERRAQUEST */}
